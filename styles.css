@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero Section */
+.header{
+    display: flex;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    gap: 20px;
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 70px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header a:hover{
+    color: red;
+}
+
+.header a.border{
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.header img{
+    position: relative;
+    top: -5px;
+    right: 100px;
+}
+
+/* Home Section Section */
+
+.home-section{
+    background-color: #000;
+    height: 920px;
+}
+
+.deco-text{
+    position: relative;
+    left: 43%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.bg-text{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 170px;
+    margin-top: 50px;
+}
+
+.home-section img{
+    position: absolute;
+    top: 70px;
+    left: 600px;
+    width: 800px;
+    height: 1000px
+}
+
+.description{
+    color: #fff;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 50px;
+}
+
+.home-section a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 20px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+/* About Section Section */
+
+.about-section{
+    margin-bottom: 60px;
+}
+
+.why-choose-me{
+    position: relative;
+    left: 6%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    width: 200px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 80px;
+}
+
+.about-section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 90px;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.big-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 10px black;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.container h2{
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+/* Projects Section Section */
+
+.projects{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.work-deco{
+    position: relative;
+    left: 6%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 250px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 70px;
+}
+
+.projects h1{
+     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 90px;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.project-container{
+    border: 1px solid #fff;
+    width: 40%;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.project-big-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.all-work-button{
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
