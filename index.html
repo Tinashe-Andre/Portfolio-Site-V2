@@ -1,209 +1,194 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" width="device-width, initial-scale=1.0">
-        <title>TDre | Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/png" href="images/T.Dre Logo.svg">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    </head>
-    <body>
-        <!--Hero Section-->
-        <div class="header">
-            <img src="images/tdreNoBG.png" width="200px" height="180px"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDre | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/T.Dre Logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+
+    <!--Hero Section-->
+    <div class="header" data-aos="fade-down" data-aos-duration="1000">
+        <img src="images/tdreNoBG.png" width="200px" height="180px"/>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#graphic-designs">Graphic Designs</a>
+        <a href="#experience">Experience</a>
+        <a class="border" href="#contact">Contact Me</a>
+    </div>
+
+    <!--Home Section-->
+    <div id="home" class="home-section" data-aos="fade-up" data-aos-duration="1500">
+        <p class="deco-text">AVAILABLE FOR WORK</p>
+        <div class="bg-text">
+            <p>TINASHE</p>
+            <p>ANDRE</p>
+        </div>
+        <img src="images/tinasheDre.png"/>
+        <p class="description">I'm a passionate and curious developer. I build clean, creative, and user-friendly websites.<br> Motivated by the fear of being average.</p>
+        <a href="files/Tinashe Andre CV 2025 Ed.pdf">Download my resume</a>
+    </div>
+
+    <!--About Section-->
+    <div id="about" class="about-section" data-aos="fade-up" data-aos-duration="1500">
+        <p class="why-choose-me">WHY CHOOSE ME</p>
+        <h1>Why Work with Me</h1>
+        <div class="big-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Tailored Design</h2>
+                <p>I believe that every design is unique and deserves a website that is just as distinctive.</p>
+            </div>
+            <div class="container">
+                <i class="fa-solid fa-circle-user"></i>
+                <h2>User-Centric Approach</h2>
+                <p>With a strong focus on user experience, I design websites that are intuitive and easy to navigate.</p>
+            </div>
+            <div class="container">
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Trending Technologies</h2>
+                <p>I stay at the forefront of web design trends and technologies to offer you the most innovative solutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects Section-->
+    <div id="projects" class="projects" data-aos="fade-up" data-aos-duration="1500">
+        <p class="work-deco">SELECTED WORK 2023-2025</p>
+        <h1>Elevating Brands with <br>Design Brilliance</h1>
+        <div class="project-big-box" data-aos="fade-up" data-aos-duration="1000">
+            <div class="project-container"><p>Project Name Here</p></div>
+            <div class="project-container"><p>Project Name Here</p></div>
+            <div class="project-container"><p>Project Name Here</p></div>
+            <div class="project-container"><p>Project Name Here</p></div>
+        </div>
+        <a href="#" class="all-work-button">Browse all work</a>
+    </div>
+
+    <!--Graphic Design Section-->
+    <div id="graphic-designs" class="graphic-designs" data-aos="fade-up" data-aos-duration="1500">
+        <p class="my-designs-deco">MY DESIGNS</p>
+        <h1>Empowering Brands<br>Through Design </h1>
+        <div class="flipbook-container" data-aos="zoom-in" data-aos-duration="1000">
+            <iframe src="https://heyzine.com/flip-book/fc47c013d1.html" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!--Experience Section-->
+    <div id="experience" class="experience" data-aos="fade-up" data-aos-duration="1500">
+        <p class="what-i-offer">WHAT I OFFER</p>
+        <h1>Discover My<br> Developer Journey</h1>
+        <p class="desc">A collection of my work in web development, app development, <br>and graphic design, showcasing real-world projects, technical skills, and creative<br> solutions.</p>
+        <div class="icons">
+            <i class="fa-solid fa-laptop-code"></i>
+            <i class="fa-solid fa-image"></i>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <div class="exp-big-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="exp-container">
+                <i class="fa-solid fa-laptop-code" id="icon1"></i>
+                <h2>Web & App Design</h2>
+                <p>Creating visually stunning and user-friendly websites is at the heart of what I do.</p>
+                <div class="list">
+                    <p>Custom Tailored Design</p>
+                    <p>Responsive Layouts</p>
+                    <p>Hard Code & WordPress Sites</p>
+                </div>
+                <a class="btn1" href="#projects">Projects</a>
+            </div>
+            <div class="exp-container">
+                <i class="fa-solid fa-screwdriver-wrench" id="icon2"></i>
+                <h2>Development</h2>
+                <p>I bring your designs to life with clean, efficient, and high-performing code.</p>
+                <div class="list">
+                    <p>HTML, CSS & JS</p>
+                    <p>Python, Java, React-Native</p>
+                    <p>Kotlin & More</p>
+                </div>
+                <a class="btn2" href="https://github.com/Tinashe-Andre" target="_blank">GitHub Profile</a>
+            </div>
+            <div class="exp-container">
+                <i class="fa-solid fa-image" id="icon3"></i>
+                <h2>Brand Identity</h2>
+                <p>Building strong brand identity is essential for standing out in a crowded market.</p>
+                <div class="list">
+                    <p>Logo Design</p>
+                    <p>Canva, Figma & Adobe</p>
+                    <p>Brand marketing and ads</p>
+                </div>
+                <a class="btn3" href="#graphic-designs">My designs</a>
+            </div>
+        </div>
+        <div class="progress" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col 1">
+                <h3>02+</h3>
+                <h4>Years of Experience</h4>
+                <p>Months of experience in delivering<br>exceptional projects</p>
+            </div>
+            <div class="col 2">
+                <h3>50+</h3>
+                <h4>Projects Delivered</h4>
+                <p>Various projects built and maintained<br>and more to come</p>
+            </div>
+            <div class="col 3">
+                <h3>98%</h3>
+                <h4>Client Satisfaction</h4>
+                <p>I build long term partnerships through proven<br>results</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Section-->
+    <div id="contact" class="contact" data-aos="fade-up" data-aos-duration="1500">
+        <div class="contact-container">
+            <p class="project-in-mind">GOT A PROJECT IN MIND</p>
+            <h1>Need a <span id="typed"></span><br>I'm your guy!</h1>
+            <form action="GET" data-aos="zoom-in" data-aos-duration="1000">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-icons">
+                <a id="profile-link" href="mailto:tinashedre.dev@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a id="profile-link" href="https://api.whatsapp.com/qr/VUTGHF4LU4P7G1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a id="profile-link" href="telephone:+0736118217" target="_blank"><i class="fas fa-phone"></i></a>
+                <a id="profile-link" href="https://m.me/tinashedre.dev" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#graphic-designs">Graphic Designs</a>
             <a href="#experience">Experience</a>
-            <a class="border" href="#contact">Contact Me</a>
         </div>
-
-        <!--Home Section-->
-        <div id="home" class="home-section">
-            <p class="deco-text">AVAILABLE FOR WORK</p>
-            <div class="bg-text">
-                <p>TINASHE</p>
-                <p>ANDRE</p>
-            </div>
-            <img src="images/tinasheDre.png"/>
-            <p class="description">I'm a passionate and curious developer. I build clean, creative, and user-friendly websites.<br> Motivated by the fer of being average.</p>
-            <a href="files/Tinashe Andre CV 2025 Ed.pdf">Download my resume</a>
+        <div class="footer-icons">
+            <a id="profile-link" href="https://github.com/Tinashe-Andre" target="_blank"><i class="fab fa-github"></i></a>
+            <a id="profile-link" href="https://www.linkedin.com/in/tinashe-makwiramiti-943939307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a id="profile-link" href="https://www.tiktok.com/@tdre.dev?_t=ZM-8wF5wqMG6In&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div>
-
-        <!--About Section-->
-        <div id="about" class="about-section">
-            <p class="why-choose-me">WHY CHOOSE ME</p>
-            <h1>Why Work with Me</h1>
-            <div class="big-box">
-                 <div class="container">
-                <h2>Tailored Design</h2>
-                <p>I believe that every design i unique and deserves a website that is just as distinctive.</p>
-            </div>
-            <div class="container">
-                <h2>User-Centric Approach</h2>
-                <p>With a strong focus on user experience, I design websites that are intuitive and easy to navigate.</p>
-            </div>
-            <div class="container">
-                <h2>Trending Technologies</h2>
-                <p>I stay at the forefront of web design trends and technologies to offer you the most innovative solutions.</p>
-            </div>
-            </div>
+        <hr>
+        <div class="credits">
+            <p>2025 Tinashe Andre © All Rights reserved.</p>
         </div>
+    </footer>
 
-        <!--Projects Section-->
-        <div id="projects" class="projects">
-            <p class="work-deco">SELECTED WORK 2023-2025</p>
-            <h1>Elevating Brands with <br>Design Brilliance</h1>
-            <div class="project-big-box">
-                <div class="project-container">
-                    <p>Project Name Here</p>
-                </div>
-                <div class="project-container">
-                    <p>Project Name Here</p>
-                </div>
-                <div class="project-container">
-                    <p>Project Name Here</p>
-                </div>
-                <div class="project-container">
-                    <p>Project Name Here</p>
-                </div>
-            </div>
-            <a href="#" class="all-work-button">Browse all work</a>
-        </div>
-
-        <!--Graphic Design Section-->
-        <div id="graphic-designs" class="graphic-designs">
-            <p class="my-designs-deco">MY DESIGNS</p>
-            <h1>Empowering Brands<br>Through Design </h1>
-            <div class="flipbook-container">
-                <iframe 
-                    src="https://heyzine.com/flip-book/fc47c013d1.html" 
-                    frameborder="0"
-                    allowfullscreen
-                    loading="lazy"
-                ></iframe>
-            </div>
-        </div>
-
-        <!--Experience Section-->
-        <div id="experience" class="experience">
-            <p class="what-i-offer">WHAT I OFFER</p>
-            <h1>Discover My<br> Developer Journey</h1>
-            <p class="desc">A collection of my work in web development, app development, <br>and graphic design, showcasing real-world projects, technical skills, and creative<br> solutions. Each role highlights my ability to build functional, <br>visually engaging digital experiences.</p>
-             <div class="icons">
-                <i class="fa-solid fa-laptop-code"></i>
-                <i class="fa-solid fa-image"></i>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-            </div>
-            <div class="exp-big-container">
-                <div class="exp-container">
-                    <i class="fa-solid fa-laptop-code" id="icon1"></i>
-                    <h2>Web & App Design</h2>
-                    <p>Creating visually stunning and user-<br> friendly websites is at the heart of what I <br>do.</p>
-                    <div class="list">
-                        <p>Custom Tailored Design</p>
-                        <p>Responsive Layouts</p>
-                        <p>Hard Code & Wordpress Sites</p>
-                    </div>
-                    <a class="btn1" href="#projects">Projects</a>
-                </div>
-                <div class="exp-container">
-                    <i class="fa-solid fa-screwdriver-wrench" id="icon2"></i>
-                    <h2>Development</h2>
-                    <p>I bring your designs to life with clean,<br>efficient, and high-performing code.</p>
-                    <div class="list">
-                        <p>HTML, CSS & JS</p>
-                        <p>Python, Java, React-Native</p>
-                        <p>Kotlin & More</p>
-                    </div>
-                    <a class="btn2" href="https://github.com/Tinashe-Andre" target="_blank">GitHub Profile</a>
-                </div>
-                <div class="exp-container">
-                    <i class="fa-solid fa-image" id="icon3"></i>
-                    <h2>Brand Identity</h2>
-                    <p>Building strong brand identity is essential<br>for standing out in a crowded market.</p>
-                    <div class="list">
-                        <p>Logo Design</p>
-                        <p>Canva, Figma & Adobe</p>
-                        <p>Brand marketing and ads</p>
-                    </div>
-                    <a class="btn3" href="#graphic-designs">My designs</a>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="col 1">
-                    <h3>02+</h3>
-                    <h4>Years of Experience</h4>
-                    <p>Months of experience in delivering<br>exceptional projects</p>
-                </div>
-                <div class="col 2">
-                    <h3>50+</h3>
-                    <h4>Projects Delivered</h4>
-                    <p>Various projects built and maintained<br>and more to come</p>
-                </div>
-                <div class="col 3">
-                    <h3>98%</h3>
-                    <h4>Client Satisfaction</h4>
-                    <p>I build long term partnerships through proven<br>results</p>
-                </div>
-            </div>
-        </div>
-       
-        <!--Contact Section-->
-        <div id="contact" class="contact">
-            <div class="contact-container">
-                <p class="project-in-mind">GOT A PROJECT IN MIND</p>
-                <h1>Need a <span id="typed"></span> <br>I'm your guy!</h1>
-                <form action="GET">
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                    />
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                    />
-                    <textarea placeholder="Your Message" required></textarea>
-                    </textarea>
-                    <button type="submit">Send</button>
-                </form>
-                <div class="contact-icons">
-                    <a id="profile-link" href="mailto:tinashedre.dev@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a id="profile-link" href="https://api.whatsapp.com/qr/VUTGHF4LU4P7G1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a id="profile-link" href="telephone:+0736118217" target="_blank"><i class="fas fa-phone"></i></a>
-                    <a id="profile-link" href="https://m.me/tinashedre.dev" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!--Footer Section-->
-        <footer>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#graphic-designs">Graphic Designs</a>
-                <a href="#experience">Experience</a>
-            </div>
-            <div class="footer-icons">
-                <a id="profile-link" href="https://github.com/Tinashe-Andre" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
-                <a id="profile-link" href="https://www.linkedin.com/in/tinashe-makwiramiti-943939307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin" target="_blank"></i></a>
-                <a id="profile-link" href="https://www.tiktok.com/@tdre.dev?_t=ZM-8wF5wqMG6In&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
-            </div>
-            <hr>
-
-            <!--Copyright-->
-            <div class="credits">
-                <p>2025 Tinashe Andre © All Rights reserved.</p>
-            </div>
-        </footer> 
-        <script src="script.js"></script> 
-    </body>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>
