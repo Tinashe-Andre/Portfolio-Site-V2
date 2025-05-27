@@ -63,10 +63,58 @@
         <p class="work-deco">SELECTED WORK 2023-2025</p>
         <h1>Elevating Brands with <br>Design Brilliance</h1>
         <div class="project-big-box" data-aos="fade-up" data-aos-duration="1000">
-            <div class="project-container"><p>Project Name Here</p></div>
-            <div class="project-container"><p>Project Name Here</p></div>
-            <div class="project-container"><p>Project Name Here</p></div>
-            <div class="project-container"><p>Project Name Here</p></div>
+            <div class="project-container">
+                <div class="project-header">
+                    <p>JS Calculator App</p>
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/js-calculator.png" alt="Calculator thumbnail">
+                    <div class="overlay">
+                        <a href="https://tinashe-andre.github.io/JS-Calculator/" target="_blank">Live</a>
+                        <a href="https://github.com/Tinashe-Andre/JS-Calculator" target="_blank">GitHub</a>
+                        <p>A Calculator App clone using HTML, CSS & JavaScript.<br>With a scientific calculator mode that uses AI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-header">
+                    <p>Project Name Here</p>
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/sample.jpg" alt=" thumbnail">
+                    <div class="overlay">
+                        <a href="#" target="_blank">Live</a>
+                        <a href="#" target="_blank">GitHub</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur.<br>adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-header">
+                    <p>Project Name Here</p>
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/sample.jpg" alt=" thumbnail">
+                    <div class="overlay">
+                        <a href="#" target="_blank">Live</a>
+                        <a href="#" target="_blank">GitHub</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur.<br>adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-header">
+                    <p>Project Name Here</p>
+                </div>
+                <div class="project-image-wrapper">
+                    <img src="images/sample.jpg" alt=" thumbnail">
+                    <div class="overlay">
+                        <a href="#" target="_blank">Live</a>
+                        <a href="#" target="_blank">GitHub</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur.<br>adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <a href="#" class="all-work-button">Browse all work</a>
     </div>
@@ -149,12 +197,20 @@
         <div class="contact-container">
             <p class="project-in-mind">GOT A PROJECT IN MIND</p>
             <h1>Need a <span id="typed"></span><br>I'm your guy!</h1>
-            <form action="GET" data-aos="zoom-in" data-aos-duration="1000">
+            <form id="contact-form" action="https://formsubmit.co/tinashedre.dev@gmail.com" method="POST" data-aos="zoom-in" data-aos-duration="1000">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_autoresponse" value="Thanks! I'll get back to you soon." />
+               
                 <input type="text" id="name" placeholder="Your Name" required />
                 <input type="email" id="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
+                <textarea id="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
+            <div id="form-success" style="display:none; color: green; margin: 15px auto;">
+                ✅ Thanks! I'll get back to you soon.
+            </div>
+
             <div class="contact-icons">
                 <a id="profile-link" href="mailto:tinashedre.dev@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 <a id="profile-link" href="https://api.whatsapp.com/qr/VUTGHF4LU4P7G1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>

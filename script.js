@@ -1,3 +1,5 @@
+//Typing animation
+
 var typed = new Typed("#typed", {
     strings: ["Web Developer?", "Graphic Designer?", "Mobile App Developer?"],
     typeSpeed: 45,
@@ -53,3 +55,35 @@ window.addEventListener('load', () => {
   handleScrollAnimation();
 });
   
+//form submission
+const form = document.getElementById("contact-form");
+  const successMessage = document.getElementById("form-success");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form redirect
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        successMessage.style.display = "block";
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 5000);
+      } else {
+        alert("Oops! Something went wrong. Please try again.");
+      }
+    })
+    .catch(() => {
+      alert("Oops! Something went wrong. Please try again.");
+    });
+  });
+
