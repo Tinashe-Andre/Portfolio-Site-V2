@@ -285,6 +285,7 @@ html {
   height: auto;
   display: block;
   transition: transform 0.3s ease;
+  margin: auto 100px;
 }
 
 .all-work-button{
@@ -295,8 +296,8 @@ html {
     border-radius: 20px;
     text-align: center;
     position: relative;
-    left: 610px;
     top: 60px;
+    margin: auto 90px;
 }
 
 .project-container p{
