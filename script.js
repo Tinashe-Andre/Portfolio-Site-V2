@@ -87,3 +87,25 @@ const form = document.getElementById("contact-form");
     });
   });
 
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const closeButton = document.querySelector('.close-menu');
+  const navLinkItems = document.querySelectorAll('.nav-links a');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  closeButton.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+
+  navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  });
+
+
+
+

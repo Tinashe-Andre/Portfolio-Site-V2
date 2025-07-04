@@ -12,16 +12,28 @@
 </head>
 <body>
 
-    <!--Hero Section-->
+    <!-- Hero Section -->
     <div class="header" data-aos="fade-down" data-aos-duration="1000">
-        <img src="images/tdreNoBG.png" width="200px" height="180px"/>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#graphic-designs">Graphic Designs</a>
-        <a href="#experience">Experience</a>
-        <a class="border" href="#contact">Contact Me</a>
+        <div class="nav-container">
+            <img src="images/tdreNoBG.png" alt="Logo" />
+    
+            <nav class="nav-links" id="navLinks">
+                <button class="close-menu" aria-label="Close menu">×</button>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#graphic-designs">Graphic Designs</a>
+                <a href="#experience">Experience</a>
+                <a class="border" href="#contact">Contact Me</a>
+            </nav>
+        </div>
+
+         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            &#9776;
+        </button>
     </div>
+
 
     <!--Home Section-->
     <div id="home" class="home-section" data-aos="fade-up" data-aos-duration="1500">
@@ -31,6 +43,7 @@
             <p>ANDRE</p>
         </div>
         <img src="images/tinasheDre.png"/>
+        <hr class="section-divider" />
         <p class="description">I'm a passionate and curious developer. I build clean, creative, and user-friendly websites.<br> Motivated by the fear of being average.</p>
         <a href="files/Andre CV.pdf">Download my resume</a>
     </div>
@@ -222,7 +235,7 @@
     </div>
 
     <!--Footer Section-->
-    <footer data-aos="fade-up" data-aos-duration="1000">
+    <footer data-aos="fade-up" data-aos-duration="900">
         <div class="footer-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -245,7 +258,22 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
-    </script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  });
+</script>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
 </body>
 </html>
