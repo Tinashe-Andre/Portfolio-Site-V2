@@ -47,9 +47,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  height: 90px;      /* Reduce height from 150px to 110px */
   background-color: #000;
   padding: 0 16px;
+  margin-bottom: 0;
   position: relative;
   z-index: 9999;
 }
@@ -59,6 +60,7 @@ html {
   display: flex;
   align-items: center;
   gap: 40px; /* adjust this to control spacing between logo and links */
+  margin-bottom: 0;
 }
 
 /* Logo */
@@ -72,6 +74,7 @@ html {
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-bottom: 0;
 }
 
 .nav-links a {
@@ -181,79 +184,115 @@ html {
 /* Home Section Section */
 
 .home-section{
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;    /* Remove all top padding */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
-    height: 920px;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+    height: 850px;      /* Optionally reduce height if needed */
 }
 
 .deco-text{
-    position: relative;
-    left: 43%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    width: 200px;
+    width: 150px;
     border-style: solid;
     border-width: 1px;
     border-color: #fff;
     border-radius: 15px;
     padding: 5px;
     font-weight: 100;
+    margin: 20px;
 }
 
 .bg-text{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 170px;
-    margin-top: 50px;
+    font-size: 4rem;
+    margin-top: 0;
 }
 
 .home-section img{
-    position: absolute;
-    top: 70px;
-    left: 600px;
-    width: 800px;
-    height: 1000px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     z-index: 0;
-    overflow-y: hidden;
+    display: block;
+    border: 2px solid #fff;
 }
 
 .description{
     color: #fff;
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: 50px;
+    text-align: center;
 }
 
 .home-section a{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
     color: #fff;
+    background: linear-gradient(90deg, #be3144 0%, #ff5858 100%);
     text-decoration: none;
-    background-color: red;
-    padding: 10px;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
-    border-radius: 20px;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 32px;
+    margin: 40px auto;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 24px rgba(190,49,68,0.25);
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    width: fit-content;
     position: relative;
-    left: 50px;
-    top: 40px;
+    overflow: hidden;
+    z-index: 1;
+    animation: pulse 2s infinite;
 }
 
-.home-section a:hover{
-    color: red;
-    background-color: #fff;
+.home-section a::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
+    z-index: 0;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.home-section a:hover, .home-section a:focus {
+    background: linear-gradient(90deg, #ff5858 0%, #be3144 100%);
+    color: #fff;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 32px rgba(190,49,68,0.35);
+}
+
+.home-section a:hover::before, .home-section a:focus::before {
+    opacity: 1;
+}
+
+/* Responsive CTA */
+@media (max-width: 700px) {
+    .home-section a {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
 }
 
 .section-divider {
   all: unset; /* Reset all default styles */
   display: block;
   height: 2px;
-  width: 80%;
+  width: 20%;
   background-color: #fff;
   margin: 0 auto;
 }
